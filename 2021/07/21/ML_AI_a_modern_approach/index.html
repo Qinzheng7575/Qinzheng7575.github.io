@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>【机器学习】读《人工智能-一种现代的方法》 | One day, New day.</title><meta name="keywords" content="python,ML,AI"><meta name="author" content="秦政,qinzheng7575@gmail.com"><meta name="copyright" content="秦政"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="从网上看到推荐这本书，开始研究，书挺厚的，买不起实体版。有要电子版的联系:email:&amp;#x71;&amp;#105;&amp;#110;&amp;#x7a;&amp;#x68;&amp;#x65;&amp;#110;&amp;#x67;&amp;#55;&amp;#x35;&amp;#55;&amp;#53;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;或者:email:&amp;#x32;&amp;#x30;&amp;#49;&amp;#x3">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【机器学习】读《人工智能-一种现代的方法》">
+<meta property="og:url" content="http://example.com/2021/07/21/ML_AI_a_modern_approach/index.html">
+<meta property="og:site_name" content="One day, New day.">
+<meta property="og:description" content="从网上看到推荐这本书，开始研究，书挺厚的，买不起实体版。有要电子版的联系:email:&amp;#x71;&amp;#105;&amp;#110;&amp;#x7a;&amp;#x68;&amp;#x65;&amp;#110;&amp;#x67;&amp;#55;&amp;#x35;&amp;#55;&amp;#53;&amp;#64;&amp;#103;&amp;#109;&amp;#97;&amp;#x69;&amp;#108;&amp;#x2e;&amp;#x63;&amp;#111;&amp;#109;或者:email:&amp;#x32;&amp;#x30;&amp;#49;&amp;#x3">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/img_convert/e49375ef568bbc4ec6baa8b67cdd61c8.png#pic_center">
+<meta property="article:published_time" content="2021-07-21T06:43:21.015Z">
+<meta property="article:modified_time" content="2021-07-23T05:10:50.070Z">
+<meta property="article:author" content="秦政">
+<meta property="article:tag" content="啦啦啦">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/img_convert/e49375ef568bbc4ec6baa8b67cdd61c8.png#pic_center"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/07/21/ML_AI_a_modern_approach/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-07-23 13:10:50'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://qinzheng7575-1.oss-cn-beijing.aliyuncs.com/touxiang.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">25</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文档</span></a></div><div class="menus_item"><a class="site-page" href="/photos/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://img-blog.csdnimg.cn/img_convert/e49375ef568bbc4ec6baa8b67cdd61c8.png#pic_center)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">One day, New day.</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 档案</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 文档</span></a></div><div class="menus_item"><a class="site-page" href="/photos/"><i class="fa-fw fas fa-images"></i><span> 图库</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">【机器学习】读《人工智能-一种现代的方法》</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-07-21T06:43:21.015Z" title="Created 2021-07-21 14:43:21">2021-07-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-07-23T05:10:50.070Z" title="Updated 2021-07-23 13:10:50">2021-07-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>从网上看到推荐这本书，开始研究，书挺厚的，买不起实体版。有要电子版的联系:email:<a href="mailto:&#x71;&#105;&#110;&#x7a;&#x68;&#x65;&#110;&#x67;&#55;&#x35;&#55;&#53;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;">&#x71;&#105;&#110;&#x7a;&#x68;&#x65;&#110;&#x67;&#55;&#x35;&#55;&#53;&#64;&#103;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;</a>或者:email:<a href="mailto:&#x32;&#x30;&#49;&#x38;&#x30;&#x31;&#x31;&#x32;&#49;&#x34;&#48;&#x32;&#x31;&#64;&#x73;&#x74;&#x64;&#46;&#x75;&#101;&#x73;&#116;&#99;&#46;&#101;&#x64;&#x75;&#46;&#x63;&#x6e;">&#x32;&#x30;&#49;&#x38;&#x30;&#x31;&#x31;&#x32;&#49;&#x34;&#48;&#x32;&#x31;&#64;&#x73;&#x74;&#x64;&#46;&#x75;&#101;&#x73;&#116;&#99;&#46;&#101;&#x64;&#x75;&#46;&#x63;&#x6e;</a></p>
+<p><strong>我个人更倾向于将这本书看作饭后读物，因为其中数学推导和难以理解的部分相对较少，对需要搭建一个整体的框架的我来说很有价值。</strong></p>
+<p>在AI的早期，符号计算的新形式是值得称道的，例如框架和语义网络，它们使得很多经典理论失效。这导致形成一种孤立主义，AI与计算机科学的其他领域之间出现巨大鸿沟。这种孤立主义目前正被逐渐抛弃。人们现在认识到，<strong>机器学习不应该和信息论分离，不确定推理不应该和随机模型分离，搜索不应该和经典的优化与控制分离，自动推理不应该和形式化方法与静态分析分离</strong>。</p>
+<p>我们希望Agent做正确的事情，那么，什么是正确的事情呢？对于Agent的设定方法——显然根据环境情况而不是Agent自身的情况来设定奖罚。</p>
+<blockquote>
+<p>​    我们用老方法来回答这个老问题:考虑Agent行动的后果。当把 Agent 置于一个环境中后，它针对收到的感知信息生成一个行动序列。这个行动序列导致环境经历一系列的状态变化。如果该系列正是渴望的，那么这个Agent 性能良好。这里的渴望通过性能度量表述，它对环境状态的任何给定序列进行评估。<br>​    注意我们这里说的是环境状态，而不是 Agent状态。如果我们从 Agent 的角度定义其性能是否成功达到，Agent可以达到完美理性，它只需欺骗自己说环境是完美的。尤其人类 Agent是典型的“酸葡萄”——如果是得不到的，他们会相信他们并不在意（如诺贝尔奖)。</p>
+</blockquote>
+<p>在先验知识的需求方面</p>
+<blockquote>
+<p>Agent 依赖于设计人员的先验知识而不是它自身的感知信息，这种情况我们会说该Agent 缺乏自主性。理性 Agent应该是自主的—–<strong>它应该学习，以弥补不完整的或者不正确的先验知识</strong>。例如，学会预见灰尘出现的地点和时间的吸尘器清洁Agent，显然就能比不会预见的Agent 要做得好。实践中，很少要求Agent 从一开始就完全自主:当Agent没有或者只有很少的经验时，它的行为往往是随机的，除非设计人员提供一些帮助。因此就像进化为动物提供了足够的内建的反射，以使它们能生存足够长的时间进行学习一样，给人工智能的Agent 提供一些初始知识以及学习能力是合理的。当得到关于环境的充足经验后，理性 Agent的行为才能独立于它的先验知识有效地行动。从而，与学习相结合使得我们可以设计在很多不同环境下都能成功的理性Agent。</p>
+<p><strong><em>我将其命名为：人在开始助推了一把使之更快突破瓶颈学习到新的知识</em></strong>2021.7.21看到2.3</p>
+</blockquote>
+<p>简单反射Agent——基于模型反射Agent（考虑历史+世界模型）——基于目标的Agent（考虑了未来，能否取得好的反馈）——基于效用的Agent（多目标冲突，性能度量）</p>
+<p>学习元件（改进提高）+性能元件（外部行动）+评判元件（反馈）</p>
+<h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><p>情况：不能一步达到目标，Agent如何找到合适的行动序列。</p>
+<p>反射Agent——状态-行为映射表太大；问题求解Agent对目标进行规划，搜索算法</p>
+<h2 id="第十九章"><a href="#第十九章" class="headerlink" title="第十九章"></a>第十九章</h2></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:qinzheng7575@gmail.com">秦政</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2021/07/21/ML_AI_a_modern_approach/">http://example.com/2021/07/21/ML_AI_a_modern_approach/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://img-blog.csdnimg.cn/img_convert/e49375ef568bbc4ec6baa8b67cdd61c8.png#pic_center" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/07/29/ML_GAN_1/"><img class="prev-cover" src="https://img-blog.csdnimg.cn/374a996151e5482ca5a935c28dedea4e.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1FpblpoZW5nNzU3NQ==,size_16,color_FFFFFF,t_70#pic_center" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">【机器学习】GAN探究</div></div></a></div><div class="next-post pull-right"><a href="/2021/07/20/ML_overview/"><img class="next-cover" src="https://img-blog.csdnimg.cn/img_convert/bdcc653ac02825db94523904c680ed06.png#pic_center" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">【机器学习】机器学习的分类——综述（更新中）</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://qinzheng7575-1.oss-cn-beijing.aliyuncs.com/touxiang.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">秦政</div><div class="author-info__description">Aloha！来访的人~</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">25</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Qinzheng7575" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:qinzheng7575@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0"><span class="toc-number">1.</span> <span class="toc-text">第三章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%8D%81%E4%B9%9D%E7%AB%A0"><span class="toc-number">2.</span> <span class="toc-text">第十九章</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/08/29/Python_fire/" title="Python fire探究"><img src="https://img-blog.csdnimg.cn/577a9c30d2c44348a1607f3513239dce.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAUWluWmhlbmc3NTc1,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python fire探究"/></a><div class="content"><a class="title" href="/2021/08/29/Python_fire/" title="Python fire探究">Python fire探究</a><time datetime="2021-08-29T10:02:10.731Z" title="Created 2021-08-29 18:02:10">2021-08-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/08/02/ML_GAN_2/" title="【机器学习】GAN探究2——动漫头像生成"><img src="https://img-blog.csdnimg.cn/98d5af9bf97949ce9be9cd665c0394c1.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1FpblpoZW5nNzU3NQ==,size_16,color_FFFFFF,t_70#pic_center" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【机器学习】GAN探究2——动漫头像生成"/></a><div class="content"><a class="title" href="/2021/08/02/ML_GAN_2/" title="【机器学习】GAN探究2——动漫头像生成">【机器学习】GAN探究2——动漫头像生成</a><time datetime="2021-08-02T06:47:37.050Z" title="Created 2021-08-02 14:47:37">2021-08-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/29/ML_GAN_1/" title="【机器学习】GAN探究"><img src="https://img-blog.csdnimg.cn/374a996151e5482ca5a935c28dedea4e.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1FpblpoZW5nNzU3NQ==,size_16,color_FFFFFF,t_70#pic_center" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【机器学习】GAN探究"/></a><div class="content"><a class="title" href="/2021/07/29/ML_GAN_1/" title="【机器学习】GAN探究">【机器学习】GAN探究</a><time datetime="2021-07-29T11:28:14.352Z" title="Created 2021-07-29 19:28:14">2021-07-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/21/ML_AI_a_modern_approach/" title="【机器学习】读《人工智能-一种现代的方法》"><img src="https://img-blog.csdnimg.cn/img_convert/e49375ef568bbc4ec6baa8b67cdd61c8.png#pic_center" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【机器学习】读《人工智能-一种现代的方法》"/></a><div class="content"><a class="title" href="/2021/07/21/ML_AI_a_modern_approach/" title="【机器学习】读《人工智能-一种现代的方法》">【机器学习】读《人工智能-一种现代的方法》</a><time datetime="2021-07-21T06:43:21.015Z" title="Created 2021-07-21 14:43:21">2021-07-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/07/20/ML_overview/" title="【机器学习】机器学习的分类——综述（更新中）"><img src="https://img-blog.csdnimg.cn/img_convert/bdcc653ac02825db94523904c680ed06.png#pic_center" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="【机器学习】机器学习的分类——综述（更新中）"/></a><div class="content"><a class="title" href="/2021/07/20/ML_overview/" title="【机器学习】机器学习的分类——综述（更新中）">【机器学习】机器学习的分类——综述（更新中）</a><time datetime="2021-07-20T08:58:11.635Z" title="Created 2021-07-20 16:58:11">2021-07-20</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021.1.30 - 2021 By 秦政</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    let initData = {
+      el: '#vcomment',
+      appId: 'nFF9IEhO6zRX5WgaInbUlQE8-gzGzoHsz',
+      appKey: 'XTFK0BpaRUndO938PLxwlbwM',
+      placeholder: '少侠请留下个评论呗。',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+    }
+
+    if (true) { 
+      initData.requiredFields= ('nick,mail'.split(','))
+    }
+    
+    if (false) {
+      const otherData = false
+      initData = Object.assign(initData, otherData)
+    }
+    
+    const valine = new Valine(initData)
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script></div></body></html>
